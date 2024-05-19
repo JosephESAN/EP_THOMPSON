@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/btPrizes"
+        android:layout_width="114dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="37dp"
+        android:text="PRIZES"
+        app:layout_constraintBottom_toTopOf="@+id/btTeams"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btTeams"
+        android:layout_width="116dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="31dp"
+        android:text="TEAMS"
+        app:layout_constraintBottom_toTopOf="@+id/btStadiums"
+        app:layout_constraintStart_toStartOf="@+id/btPrizes"
+        app:layout_constraintTop_toBottomOf="@+id/btPrizes" />
+
+    <Button
+        android:id="@+id/btStadiums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="206dp"
+        android:text="STADIUMS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btTeams"
+        app:layout_constraintTop_toBottomOf="@+id/btTeams" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="73dp"
+        app:layout_constraintBottom_toTopOf="@+id/btPrizes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/copa" />
+</androidx.constraintlayout.widget.ConstraintLayout>
